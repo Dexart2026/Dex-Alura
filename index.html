@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dexflix</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./js-css/style.css">
+</head>
+
+<body>
+    
+
+    <div class="screen">
+        <header class="topbar">
+            <a href="index.html" class="logo" aria-label="Página inicial da Dexflix">
+                <h1>DEXFLIX</h1>
+            </a>
+
+            <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="nav-menu"
+                aria-expanded="false">
+                <span class="fa-solid fa-bars" aria-hidden="true"></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Menu principal">
+                <a href="#inicio">Início</a>
+                <a href="#ofertas">Ofertas</a>
+                <a href="#">Cadastro</a>
+                <a href="#">Login</a>
+                <a href="#">Conta</a>
+            </nav>
+
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Trocar tema">
+                <span class="theme-icon" aria-hidden="true">🔥</span>
+            </button>
+        </header>
+
+        <main>
+            <section class="hero" id="inicio" aria-labelledby="hero-title">
+                <div class="hero-content">
+                    <p class="hero-label">Experiência premium</p>
+                    <h2 id="hero-title">Bem-vindo ao Dexflix</h2>
+                    <p>
+                        Um projeto inspirado nas grandes plataformas de streaming, criado para
+                        prática, estudo e evolução no front-end.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="perfis.html" class="btn-primary">Escolher perfil</a>
+                        <a href="#ofertas" class="btn-secondary">Ver ofertas</a>
+                    </div>
+                </div>
+
+                <aside class="hero-showcase" aria-labelledby="showcase-title">
+                    <h3 id="showcase-title">Em destaque</h3>
+
+                    <div class="carousel" id="carousel">
+                        <div class="showcase-row" id="showcaseRow">
+                            <article class="showcase-card">
+                                <img src="./Filmes-codes/01_o_senhor_dos_codigos.png" alt="Pôster de O Senhor dos Códigos">
+                                <span>O Senhor dos Códigos</span>
+                            </article>
+
+                            <article class="showcase-card">
+                                <img src="./Filmes-codes/22_kill_java.png" alt="Pôster de Kill Java">
+                                <span>Kill Java</span>
+                            </article>
+
+                            <article class="showcase-card">
+                                <img src="./Filmes-codes/02_jurassic_python.png" alt="Pôster de Jurassic Python">
+                                <span>Jurassic Python</span>
+                            </article>
+
+                            <article class="showcase-card">
+                                <img src="./Filmes-codes/03_matrix_code.png" alt="Pôster de Matrix Code">
+                                <span>Matrix Code</span>
+                            </article>
+
+                            <article class="showcase-card">
+                                <img src="./Filmes-codes/04_vscode_top_gun.png" alt="Pôster de VSCode Top Gun">
+                                <span>VSCode Top Gun</span>
+                            </article>
+
+                            <article class="showcase-card">
+                                <img src="./Filmes-codes/05_o_gitador.png" alt="Pôster de O Gitador">
+                                <span>O Gitador</span>
+                            </article>
+
+                            <article class="showcase-card">
+                                <img src="./Filmes-codes/06_python_wars.png" alt="Pôster de Python Wars">
+                                <span>Python Wars</span>
+                            </article>
+
+                            <article class="showcase-card">
+                                <img src="./Filmes-codes/07_programador_de_linux.png" alt="Pôster de Programador de Linux">
+                                <span>Programador de Linux</span>
+                            </article>
+
+                            <article class="showcase-card">
+                                <img src="./Filmes-codes/08_typescript_jones.png" alt="Pôster de Typescript Jones">
+                                <span>Typescript Jones</span>
+                            </article>
+
+                            <article class="showcase-card">
+                                <img src="./Filmes-codes/09_react_fiction.png" alt="Pôster de React Fiction">
+                                <span>React Fiction</span>
+                            </article>
+
+                            <article class="showcase-card">
+                                <img src="./Filmes-codes/10_docker_missao_surpresa.png" alt="Pôster de Docker Missão Surpresa">
+                                <span>Docker Missão Surpresa</span>
+                            </article>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js-css/script.js"></script>
+</body>
+
+</html>
