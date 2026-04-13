@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dexflix - Catálogo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./js-css/catalog.css">
+
+</head>
+
+<body>
+    <header class="topbar">
+        <a href="perfis.html" class="logo">DEXFLIX</a>
+
+        <nav class="nav-links" aria-label="Menu do catálogo">
+            <a href="#inicio">Início</a>
+            <a href="#series">Séries</a>
+            <a href="#filmes">Filmes</a>
+            <a href="#top10">Top 10</a>
+            <a href="#minha-lista">Minha Lista</a>
+        </nav>
+
+        <div class="profile-pill profile-box">
+            <img id="profile-avatar" src="./arquivos-uteis/unnamed.dex.jpg" alt="Foto do perfil" class="profile-avatar">
+            <span>Perfil: <strong id="profile-name">Visitante</strong></span>
+        </div>
+    </header>
+
+    <section class="hero-slider" id="inicio">
+        <div class="hero-slide active" data-title="Jurassic Python"
+            data-description="Em um parque tecnológico criado para impressionar o mundo, programadores e cientistas usam Python para dar vida a criaturas pré-históricas em uma experiência jamais vista. O projeto parecia perfeito, até que uma falha crítica no sistema coloca todos em risco e transforma inovação em pesadelo."
+            data-image="./banners/Jurassic-python-banner.png">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <div class="hero-kicker">Dexflix Original</div>
+                <h1>Jurassic Python</h1>
+                <p>
+                    Em um parque tecnológico criado para impressionar o mundo, programadores e cientistas usam Python
+                    para dar vida a criaturas pré-históricas em uma experiência jamais vista.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">▶ Assistir</button>
+                    <button class="btn btn-secondary">ℹ Mais informações</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-slide" data-title="O Programador de Linux"
+            data-description="Um programador de Linux embarca em uma jornada hilária para salvar seu sistema operacional favorito, enfrentando bugs, hackers e até mesmo um exército de pinguins digitais. Com humor afiado e situações absurdas, ele descobre que a verdadeira força do Linux está na comunidade e na paixão por código aberto."
+            data-image="./banners/linux-banner.png">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <div class="hero-kicker">Dexflix Original</div>
+                <h1>O Programador de Linux</h1>
+                <p>
+                    Um programador de Linux embarca em uma jornada hilária para salvar seu sistema operacional favorito.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">▶ Assistir</button>
+                    <button class="btn btn-secondary">ℹ Mais informações</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-slide" data-title="Kill Java"
+            data-description="Pilotos de elite dão lugar a programadores de elite. Em uma academia ultra competitiva, o melhor editor do mundo vira peça central numa missão impossível."
+            data-image="./banners/Kill_java_banner.png">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <div class="hero-kicker">Dexflix Original</div>
+                <h1>Kill Java</h1>
+                <p>
+                    Em um universo onde poder, linguagem e domínio técnico se misturam com ação estilizada,
+                    Kill Java entrega uma história explosiva sobre revanche, sobrevivência e obsessão. Com ritmo
+                    acelerado,
+                    visual marcante e tensão do começo ao fim, o filme transforma o mundo da programação em um campo de
+                    batalha sem misericórdia.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">▶ Assistir</button>
+                    <button class="btn btn-secondary">ℹ Mais informações</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-slide" data-title="Mr.Docker"
+            data-description="Pilotos de elite dão lugar a programadores de elite. Em uma academia ultra competitiva, o melhor editor do mundo vira peça central numa missão impossível."
+            data-image="./banners/Novo-filme.png">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <div class="hero-kicker">Dexflix Original</div>
+                <h1>Mr. Docker</h1>
+                <p>
+                    Mr. Docker
+                    Em uma cidade dominada por sistemas, redes e corporações digitais, um programador brilhante e
+                    solitário descobre que uma série de ataques invisíveis está colocando em risco estruturas inteiras
+                    da tecnologia moderna. Enquanto empresas tentam esconder a gravidade do problema, ele percebe que
+                    não está enfrentando apenas falhas comuns, mas uma guerra silenciosa travada dentro do próprio
+                    código.
+
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Em breve..</button>
+                    <button class="btn btn-secondary">ℹ Mais informações</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <button class="hero-nav hero-prev" aria-label="Slide anterior">❮</button>
+        <button class="hero-nav hero-next" aria-label="Próximo slide">❯</button>
+
+        <div class="hero-dots">
+            <button class="hero-dot active" aria-label="Ir para slide 1"></button>
+            <button class="hero-dot" aria-label="Ir para slide 2"></button>
+            <button class="hero-dot" aria-label="Ir para slide 3"></button>
+            <button class="hero-dot" aria-label="Ir para slide 4"></button>
+        </div>
+    </section>
+
+    <main class="catalog">
+        <section class="row" id="series">
+            <h2>Séries para <span id="profile-name-row-1">você</span></h2>
+            <div class="cards">
+                <article class="card" data-title="O Gitador" data-type="Série" data-meta="Drama • 2 temporadas"
+                    data-description="Em um mundo onde a realidade é moldada por códigos e algoritmos, um jovem programador de software chamado O Gitador é recrutado para uma missão secreta."
+                    data-image="./Filmes-codes/05_o_gitador.png">
+                    <img src="./Filmes-codes/05_o_gitador.png" alt="Série O Gitador">
+                    <div class="card-info">
+                        <span class="badge">Série</span>
+                        <h3>O Gitador</h3>
+                        <p class="meta">Drama • 2 temporadas</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="Jurassic Python" data-type="Filme" data-meta="Ação • Ficção"
+                    data-description="Em um mundo onde a tecnologia e a natureza colidem, um grupo de cientistas e aventureiros deve enfrentar uma ameaça pré-histórica."
+                    data-image="./banners/Jurassic-python-banner.png">
+                    <img src="./Filmes-codes/02_jurassic_python.png" alt="Filme Jurassic Python">
+                    <div class="card-info">
+                        <span class="badge">Original</span>
+                        <h3>Jurassic Python</h3>
+                        <p class="meta">Ação • Ficção</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="O Senhor dos Códigos" data-type="Filme" data-meta="Drama • Mistério"
+                    data-description="Um detetive cibernético é contratado para resolver crimes virtuais que ameaçam a estabilidade do mundo digital."
+                    data-image="./Filmes-codes/01_o_senhor_dos_codigos.png">
+                    <img src="./Filmes-codes/01_o_senhor_dos_codigos.png" alt="Filme O Senhor dos Códigos">
+                    <div class="card-info">
+                        <span class="badge">Original</span>
+                        <h3>O Senhor dos Códigos</h3>
+                        <p class="meta">Drama • Mistério</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="VSCode Top Gun" data-type="Filme" data-meta="Aventura • 16+"
+                    data-description="Um jovem programador é recrutado para uma missão secreta que exige velocidade, precisão e coragem."
+                    data-image="./Filmes-codes/04_vscode_top_gun.png">
+                    <img src="./Filmes-codes/04_vscode_top_gun.png" alt="Filme VSCode Top Gun">
+                    <div class="card-info">
+                        <span class="badge">Nova</span>
+                        <h3>VSCode Top Gun</h3>
+                        <p class="meta">Aventura • 16+</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="Python Wars" data-type="Série" data-meta="Fantasia • 3 temporadas"
+                    data-description="Em um mundo governado por códigos e algoritmos, heróis improváveis enfrentam ameaças que desafiam a realidade."
+                    data-image="./banners/Python-Wars-banner.png">
+                    <img src="./Filmes-codes/06_python_wars.png" alt="Série Python Wars">
+                    <div class="card-info">
+                        <span class="badge">Série</span>
+                        <h3>Python Wars</h3>
+                        <p class="meta">Fantasia • 3 temporadas</p>
+                    </div>
+                </article>
+
+
+                <article class="card" data-title="Reactbuster" data-type="Filme" data-meta="Ação • 2h 15min"
+                    data-description="Pilotos de elite dão lugar a programadores de elite em uma missão impossível."
+                    data-image="./Filmes-codes/20_reactbusters.png">
+                    <img src="./Filmes-codes/20_reactbusters.png" alt="Filme Reactbuster">
+                    <div class="card-info">
+                        <span class="badge">Ação</span>
+                        <h3>Reactbuster</h3>
+                        <p class="meta">Ação • 2h 15min</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="row" id="filmes">
+            <h2>Filmes em alta</h2>
+            <div class="cards">
+                <article class="card" data-title="Matrix Code" data-type="Filme" data-meta="Ficção • 2h 05min"
+                    data-description="Um jovem programador é recrutado para enfrentar uma organização criminosa internacional."
+                    data-image="./Filmes-codes/03_matrix_code.png">
+                    <img src="./Filmes-codes/03_matrix_code.png" alt="Filme Matrix Code">
+                    <div class="card-info">
+                        <span class="badge">Filme</span>
+                        <h3>Matrix Code</h3>
+                        <p class="meta">Ficção • 2h 05min</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="Programador de Linux" data-type="Filme" data-meta="Comédia • 1h 30min"
+                    data-description="Um programador de Linux embarca em uma jornada hilária para salvar seu sistema operacional favorito."
+                    data-image="./banners/linux-banner.png">
+                    <img src="./Filmes-codes/07_programador_de_linux.png" alt="Filme Programador de Linux">
+                    <div class="card-info">
+                        <span class="badge">Filme</span>
+                        <h3>Programador de Linux</h3>
+                        <p class="meta">Comédia • 1h 30min</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="Docker Missão Surpresa" data-type="Série" data-meta="Ação • 2h 15min"
+                    data-description="Especialistas em tecnologia são recrutados para infiltrar uma organização criminosa global."
+                    data-image="./Filmes-codes/10_docker_missao_surpresa.png">
+                    <img src="./Filmes-codes/10_docker_missao_surpresa.png" alt="Filme Docker Missão Surpresa">
+                    <div class="card-info">
+                        <span class="badge">Popular</span>
+                        <h3>Docker Missão Surpresa</h3>
+                        <p class="meta">Ação • 2h 15min</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="TypeScript Jones" data-type="Filme" data-meta="Mistério • 1h 49min"
+                    data-description="Um detetive cibernético investiga uma conspiração que pode mudar para sempre o mundo digital."
+                    data-image="./Filmes-codes/08_typescript_jones.png">
+                    <img src="./Filmes-codes/08_typescript_jones.png" alt="Filme TypeScript Jones">
+                    <div class="card-info">
+                        <span class="badge">Filme</span>
+                        <h3>TypeScript Jones</h3>
+                        <p class="meta">Mistério • 1h 49min</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="Docker Alone" data-type="Filme"
+                    data-meta="Ficção científica • 2h 10min"
+                    data-description="Em um futuro distópico, um programador de software luta para sobreviver em um mundo dominado por inteligência artificial."
+                    data-image="./Filmes-codes/21_docker_alone_poster.png">
+                    <img src="./Filmes-codes/21_docker_alone_poster.png" alt="Filme Docker Alone">
+                    <div class="card-info">
+                        <span class="badge">Filme</span>
+                        <h3>Docker Alone</h3>
+                        <p class="meta">Ficção científica • 2h 10min</p>
+                    </div>
+            </div>
+        </section>
+
+        <section class="row top10" id="top10">
+            <h2>Top 10 na Dexflix hoje</h2>
+            <div class="cards">
+                <article class="card" data-title="VSCode Top Gun" data-type="Filme" data-meta="Série • Thriller"
+                    data-description="Uma academia ultra competitiva forma os melhores programadores do mundo."
+                    data-image="./Filmes-codes/04_vscode_top_gun.png">
+                    <img src="./Filmes-codes/04_vscode_top_gun.png" alt="Top 10 1">
+                    <div class="card-info">
+                        <span class="badge">#1 Hoje</span>
+                        <h3>VSCode Top Gun</h3>
+                        <p class="meta">Série • Thriller</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="O Senhor dos Códigos" data-type="Filme" data-meta="Filme • Ação"
+                    data-description="Um detetive cibernético tenta impedir um colapso no universo digital."
+                    data-image="./Filmes-codes/01_o_senhor_dos_codigos.png">
+                    <img src="./Filmes-codes/01_o_senhor_dos_codigos.png" alt="Top 10 2">
+                    <div class="card-info">
+                        <span class="badge">#2 Hoje</span>
+                        <h3>O Senhor dos Códigos</h3>
+                        <p class="meta">Filme • Ação</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="Python Wars" data-type="Série" data-meta="Série • Fantasia"
+                    data-description="Heróis enfrentam ameaças em um mundo governado por códigos e algoritmos."
+                    data-image="./Filmes-codes/06_python_wars.png">
+                    <img src="./Filmes-codes/06_python_wars.png" alt="Top 10 3">
+                    <div class="card-info">
+                        <span class="badge">#3 Hoje</span>
+                        <h3>Python Wars</h3>
+                        <p class="meta">Série • Fantasia</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="Programador de Linux" data-type="Filme" data-meta="Comédia • 1h 30min"
+                    data-description="Uma comédia sobre tecnologia, bugs e muito caos."
+                    data-image="./banners/linux-banner.png">
+                    <img src="./Filmes-codes/07_programador_de_linux.png" alt="Top 10 4">
+                    <div class="card-info">
+                        <span class="badge">#4 Hoje</span>
+                        <h3>Programador de Linux</h3>
+                        <p class="meta">Comédia • 1h 30min</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="Kill Java" data-type="Filme" data-meta="Ação • 2h 15min"
+                    data-description="Pilotos de elite dão lugar a programadores de elite em uma missão impossível."
+                    data-image="./banners/Kill_java_banner.png">
+                    <img src="./Filmes-codes/22_kill_java.png" alt="Top 10 5">
+                    <div class="card-info">
+                        <span class="badge">#5 Hoje</span>
+                        <h3>Kill Java</h3>
+                        <p class="meta">Ação • 2h 15min</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="row" id="minha-lista">
+            <h2>Minha lista</h2>
+            <div class="cards">
+                <article class="card" data-title="Docker Missão Surpresa" data-type="Série"
+                    data-meta="Ficção científica"
+                    data-description="Uma missão secreta que mistura tecnologia, perigo e estratégia."
+                    data-image="./Filmes-codes/10_docker_missao_surpresa.png">
+                    <img src="./Filmes-codes/10_docker_missao_surpresa.png" alt="Minha lista 1">
+                    <div class="card-info">
+                        <span class="badge">Salvo</span>
+                        <h3>Docker Missão Surpresa</h3>
+                        <p class="meta">Ficção científica</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="TypeScript Jones" data-type="Série" data-meta="Suspense psicológico"
+                    data-description="Um thriller digital cheio de pistas, mistérios e conspirações."
+                    data-image="./Filmes-codes/08_typescript_jones.png">
+                    <img src="./Filmes-codes/08_typescript_jones.png" alt="Minha lista 2">
+                    <div class="card-info">
+                        <span class="badge">Salvo</span>
+                        <h3>TypeScript Jones</h3>
+                        <p class="meta">Suspense psicológico</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="Programador de Linux" data-type="Filme" data-meta="Comédia • 1h 30min"
+                    data-description="Um bug gigantesco ameaça o sistema favorito do herói mais improvável do mundo Linux."
+                    data-image="./banners/linux-banner.png">
+                    <img src="./Filmes-codes/07_programador_de_linux.png" alt="Minha lista 3">
+                    <div class="card-info">
+                        <span class="badge">Salvo</span>
+                        <h3>Programador de Linux</h3>
+                        <p class="meta">Comédia • 1h 30min</p>
+                    </div>
+                </article>
+
+                <article class="card" data-title="Jurassic Python" data-type="Filme" data-meta="Ação • Fantasia"
+                    data-description="Criaturas pré-históricas e tecnologia colidem em uma aventura fora de controle."
+                    data-image="./banners/Jurassic-python-banner.png">
+                    <img src="./Filmes-codes/02_jurassic_python.png" alt="Minha lista 4">
+                    <div class="card-info">
+                        <span class="badge">Salvo</span>
+                        <h3>Jurassic Python</h3>
+                        <p class="meta">Ação • Fantasia</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        Catálogo carregado para o perfil <strong id="profile-name-footer">Visitante</strong> • Dexflix
+    </footer>
+
+    <div class="modal-overlay" id="movie-modal">
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close" aria-label="Fechar">✕</button>
+
+            <div class="modal-image-wrap">
+                <img id="modal-image" src="" alt="">
+            </div>
+
+            <div class="modal-content">
+                <span class="modal-badge" id="modal-type">Filme</span>
+                <h2 id="modal-title">Título</h2>
+                <p class="modal-meta" id="modal-meta">Categoria</p>
+                <p class="modal-description" id="modal-description">Descrição do conteúdo.</p>
+
+                <div class="modal-actions">
+                    <button class="modal-btn modal-btn-primary">▶ Assistir</button>
+                    <button class="modal-btn modal-btn-secondary">+ Minha Lista</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js-css/catalog.js"></script>
+</body>
+
+</html>
