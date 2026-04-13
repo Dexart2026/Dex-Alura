@@ -50,4 +50,4 @@ A aplicação simula uma plataforma com seleção de perfis, catálogo de filmes
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
+git clone https://github.com/Dexart2026/Dex-Alura.git
